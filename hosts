@@ -1,0 +1,16 @@
+[alienvault]
+192.168.1.253
+
+[linux_agents]
+192.168.1.145
+192.168.1.141 ansible_python_interpreter=/usr/bin/python3
+
+[win]
+192.168.1.140
+
+[win:vars]
+ansible_user=Administrator
+ansible_password=2!ppy0ps
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+
